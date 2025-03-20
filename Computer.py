@@ -41,13 +41,9 @@ class Processor(Component):
               f"\n Модель процессора: {self.processor_model}"
               f"\n Сокет: {self.soccet}")
         
-    def check_system_compfbility(self):
+    def check_system_compability(self):
         super().check_compatibility()
         if self.motherboard_soccet == self.soccet:
             print (f"Проверка совместимости пройдена успешно, сокеты совместимы")
         else:
             print (f"Проверка совместимости провалена, сокеты не совместимы")
-
-
-computer1 = Processor(1, 2, 3, 4, 3, 6, 7, 8, 5)
-computer1.check_system_compfbility()

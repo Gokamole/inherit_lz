@@ -15,4 +15,8 @@ def main():
     computer1 = Component(motherboard_model, power_unit_model, power_unit_port, motherboard_soccet, motherboard_voltage_port)
     computer1 = Processor(motherboard_model, power_unit_model, power_unit_port, motherboard_soccet, motherboard_voltage_port, core_count, power_consumption, processor_model, soccet)
 
+    computer1.check_system_compability()
+    computer1.get_info()
     
+if __name__ == "__main__":
+    main()
